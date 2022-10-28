@@ -1,5 +1,7 @@
 package ru.mirea.task.two.server;
 
+import ru.mirea.task.two.client.SquareComparison;
+
 import java.rmi.RemoteException;
 
 public class SquareComparisonImpl implements SquareComparison {
