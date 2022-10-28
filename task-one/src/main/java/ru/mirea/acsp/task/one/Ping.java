@@ -1,6 +1,6 @@
-package ru.mirea;
+package ru.mirea.acsp.task.one;
 
-public class Pong implements Runnable {
+public class Ping implements Runnable {
 
     private final PingStreamSynchronization pingStreamSynchronization;
 
@@ -8,7 +8,7 @@ public class Pong implements Runnable {
 
     private int count = 0;
 
-    public Pong(PingStreamSynchronization pingStreamSynchronization, PongStreamSynchronization pongStreamSynchronization) {
+    public Ping(PingStreamSynchronization pingStreamSynchronization, PongStreamSynchronization pongStreamSynchronization) {
         this.pingStreamSynchronization = pingStreamSynchronization;
         this.pongStreamSynchronization = pongStreamSynchronization;
     }
@@ -16,9 +16,9 @@ public class Pong implements Runnable {
     public void run() {
         for (int i = 0; i < 11; i++) {
             count++;
-            pingStreamSynchronization.take();
-            System.out.print("PONG ");
-            pongStreamSynchronization.put();
+            pingStreamSynchronization.put();
+            pongStreamSynchronization.take();
+            System.out.print("PING ");
         }
     }
 }

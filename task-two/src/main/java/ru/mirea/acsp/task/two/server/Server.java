@@ -1,4 +1,4 @@
-package ru.mirea.task.two.server;
+package ru.mirea.acsp.task.two.server;
 
 import java.rmi.AlreadyBoundException;
 import java.rmi.Remote;

@@ -1,4 +1,4 @@
-package ru.mirea.task.two.client;
+package ru.mirea.acsp.task.two.client;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;

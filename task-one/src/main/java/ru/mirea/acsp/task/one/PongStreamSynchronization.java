@@ -1,8 +1,8 @@
-package ru.mirea;
+package ru.mirea.acsp.task.one;
 
-public class PingStreamSynchronization {
+public class PongStreamSynchronization {
 
-    private boolean isActive = true;
+    private boolean isActive = false;
 
     public synchronized void take() {
         while (isActive) {

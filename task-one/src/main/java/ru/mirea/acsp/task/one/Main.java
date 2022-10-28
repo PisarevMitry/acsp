@@ -1,4 +1,4 @@
-package ru.mirea;
+package ru.mirea.acsp.task.one;
 
 public class Main {
     public static void main(String[] args) {
