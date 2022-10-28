@@ -1,2 +1,4 @@
-# Project exclude paths
 /task-one/target/
+/.idea/
+**/target
+**/*.iml
